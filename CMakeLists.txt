@@ -260,7 +260,7 @@ OCV_OPTION(WITH_CPUFEATURES "Use cpufeatures Android library" ON
 OCV_OPTION(WITH_VTK "Include VTK library support (and build opencv_viz module eiher)" ON
   VISIBLE_IF NOT ANDROID AND NOT IOS AND NOT XROS AND NOT WINRT AND NOT CMAKE_CROSSCOMPILING
   VERIFY HAVE_VTK)
-OCV_OPTION(WITH_CUDA "Include NVidia Cuda Runtime support" OFF
+OCV_OPTION(WITH_CUDA "Include NVidia Cuda Runtime support" ON
   VISIBLE_IF NOT IOS AND NOT XROS AND NOT WINRT
   VERIFY HAVE_CUDA)
 OCV_OPTION(WITH_CUFFT "Include NVidia Cuda Fast Fourier Transform (FFT) library support" WITH_CUDA
